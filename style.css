@@ -58,6 +58,14 @@ footer a {
     align-content: center;
     border-radius: 0.2rem;
   }
+  .container {
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    height: inherit;
+    display: inline-block;
+    margin: 0.5rem;
+  }
   p {
     border-radius: 0.2rem;
     background-color: white;
