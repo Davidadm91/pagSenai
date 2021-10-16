@@ -9,16 +9,18 @@ nav a {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0.2rem;
+
   padding: 0.2rem;
   background-color: rgb(4, 248, 4);
   border-radius: 4px;
   align-items: center;
 }
+
 .logo {
   font-size: 4rem;
   color: rgb(4, 248, 4);
   margin: 0;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 320px) {
@@ -33,43 +35,43 @@ nav a {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
-    width: 100%;
   }
   p {
+    border-radius: 0.2rem;
     font-size: 1.5rem;
     background-color: white;
-    margin: 10px;
-    align-items: center;
     border: groove;
-    width: 100%;
+  }
+  p a {
+    color: rgb(4, 248, 4);
+    text-decoration: none;
   }
 
   footer {
     width: 100%;
     background-color: white;
     border: groove;
+    border-radius: 0.2rem;
   }
   footer a {
     color: black;
     text-decoration: none;
   }
   .vid {
-    margin: 15px;
-    width: 100%;
-    display: flex;
-    align-content: center;
+    display: inline-block;
   }
   .gal {
-    margin: 15px;
-    width: 80%;
-    display: flex;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 0.2rem;
   }
   .ban {
-    width: 80%;
+    width: 100%;
+    height: 700px;
     display: flex;
     align-content: center;
-    border-radius: 6px;
+    border-radius: 0.2rem;
   }
 }
