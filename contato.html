@@ -22,27 +22,38 @@
   </head>
   <body>
     <header>
-      <h1 class="logo">Game Mania</h1>
-        <nav>
-          <ul>
-            <a href="home.html" class="men">Home<a>
-            <a href="destaque.html" class="men">Destaque</a>
-            <a href="novidades.html" class="men">novidades</a>
-            <a href="galeria.html" class="men">galeria</a>
-            <a href="contato.html" class="men">contato</a>
-            <a href="#" class="men">login</a>
+      <h1 class="page-header">Game Mania</h1>
+        <nav class="nav">
+          <ul class="list nav">
+            <li><a href="home.html" class="men">Home<a></a></li>
+            <li><a href="destaque.html" class="men">Destaque</a></li>
+            <li><a href="novidades.html" class="men">novidades</a></li>
+            <li><a href="galeria.html" class="men">galeria</a></li>
+            <li><a href="contato.html" class="men">contato</a></li>
+            <li><a href="#" class="men">login</a></li>         
           </ul>            
         </nav>
     </header>
     <h2>fale conosco</h2>
    <main>
-    <div class="container">
-      <div class="row border">
-          <div class="col-6" style="text-align:center;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero molestias obcaecati nisi nostrum. Unde quas aliquid accusantium, placeat et libero quo ea totam temporibus optio? Esse id omnis vitae dicta autem cumque exercitationem vel iusto sint reprehenderit! Placeat nostrum atque autem illum officia at officiis quis nemo, dolor, quisquam iste?</p></div>
-          <div class="col-6"><img width="100%" height="" src="img/iphone11.jpg" alt="" class="img-responsive"></div>
-          <div class="col-12"><img width="100%" height="" src="img/noteboook.jpg">
+    <form>
+      <div class="form-group">
+        <label for="nome">nome</label>
+        <input type="text" id="nome"/>
       </div>
-  </div>
+      <div class="form-group">
+        <label for="email">e-mail</label>
+        <input type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="telefone">telefone</label>
+        <input type="telefone" id="telefone">
+      </div>
+      <div>
+        <label for="msg">mensagem</label>
+        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+      </div>
+    </form>
 
   
       
@@ -64,7 +75,7 @@
         <a href="">facebook</a> <a href="">instagram</a> <a href="">youtube<a>
       </div>
     </footer>
-    <script type src="js/jquery.js"></script>
-    <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+   
+    
   </body>
 </html>
