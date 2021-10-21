@@ -15,45 +15,50 @@
     />
     <meta name="author" content="david adam" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site senai</title>
+    <title>site senai</title>
     <link rel="stylesheet" href="" type=""size=16x16>
     <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet"type="text/css" href="style.css">                  
+    <link rel="stylesheet"type="text/css" href="style.css">
   </head>
   <body>
     <header>
-      <h1 class="page-header">Game Mania</h1>
-        <nav class="nav">
-          <ul class="list nav">
-            <li><a href="home.html" class="men">Home<a></a></li>
-            <li><a href="destaque.html" class="men">Destaque</a></li>
-            <li><a href="novidades.html" class="men">novidades</a></li>
-            <li><a href="galeria.html" class="men">galeria</a></li>
-            <li><a href="contato.html" class="men">contato</a></li>
-            <li><a href="#" class="men">login</a></li>         
-          </ul>            
-        </nav>
+      <a href="home.html" class="page-header">Game Mania</a>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            <nav class="nav">
+              <ul class="list nav">
+                <li><a href="home.html" class="men">Home<a></a></li>
+                <li><a href="destaque.html" class="men">Destaque</a></li>
+                <li><a href="novidades.html" class="men">novidades</a></li>
+                <li><a href="galeria.html" class="men">galeria</a></li>
+                <li><a href="contato.html" class="men">contato</a></li>
+                <li><a href="login.html" class="men">login</a></li>         
+              </ul>            
+            </nav>
+          </div>
+        </div>
+      </div>  
     </header>
-    <h2>destaque</h2>
-    <article>
+   
+    <main class="container">
+      <h1>destaque</h1>
       <h2>LANÇAMENTOS DE 2021</h2>
       <p>confira alguns trailer oficiais de jogos que serão lançados ainda em 2021, toda semana sera atualizado os trailer de lançamentos</p>
-    </article>
-
-
-    <section class="vid">
-    <div class="vid"><iframe
-      width="720"
-      height="400"
+  
+    <section class="row">
+    <div class="col-12"><iframe
+     
       src="https://www.youtube.com/embed/x6oF3Jxu7X0"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe></div>
-      <div class="vid"><iframe
-        width="720"
-        height="400"
+  </section>
+      <div class="col-12"><iframe
+      
         src="https://www.youtube.com/embed/FYH9n37B7Yw"
         title="YouTube video player"
         frameborder="0"
@@ -61,19 +66,22 @@
         allowfullscreen
       >
       </iframe></div>           
-    </section>
+    
+  </main>
 
-    <footer>
-      <div>
-        <a href="">telefone</a><br /><a href="">e-mail</a><br /><a href=""
-          >localização</a
-        >
-      </div>
-
-      <div align="right">
-        <a href="">facebook</a> <a href="">instagram</a> <a href="">youtube<a>
-      </div>
-    </footer>
+    <footer class="container">
+      <ul class="row">
+      <li class=><a href="">telefone</a></li>
+      <li><a href="">e-mail</a></li>
+      <li><a href="">localização</a></li>
+      </ul>
+      <nav class="offset-9">
+        <a href="">facebook</a>
+        <a href="">instagram</a>
+        <a href="">youtube<a></a>
+      </nav>
+       
+</footer>
   </body>
   
  
