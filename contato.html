@@ -17,92 +17,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site senai</title>
     <link rel="stylesheet" href="" type=""size=16x16>
-    <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"type="text/css" href="style.css">
   </head>
   <body>
     <header>
       <a href="home.html" class="page-header">Game Mania</a>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12">
-            <nav class="nav">
-              <ul class="list nav">
-                <li><a href="home.html" class="men">Home<a></a></li>
-                <li><a href="destaque.html" class="men">Destaque</a></li>
-                <li><a href="novidades.html" class="men">novidades</a></li>
-                <li><a href="galeria.html" class="men">galeria</a></li>
-                <li><a href="contato.html" class="men">contato</a></li>
-                <li><a href="login.htmls" class="men">login</a></li>         
-              </ul>            
-            </nav>
+      <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="promocoes.html">promoções</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn" onclick="menu()">consoles<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="">playstation</a>
+            <a href="">xbox</a>
+            <a href="">pc game</a>
           </div>
-
-
         </div>
-      </div>  
-
-    </header>
-   
+        <a href="novidades.html" >novidades</a>
+        <a href="galeria.html" >galeria</a>
+        <a href="contato.html" >contato</a>
+        <a href="login.html" >login</a>
+      </div>
+    </header>    
     
     <h1>fale conosco</h1>
    <main>
     <form>
-     <div class="container">
-       <div class="row mb-3">
-         <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
-         <div class="col-sm-10">
-           <input type="text" class="form-control" id="inputEmail3" placeholder="digite seu nome">
-         </div>
-       </div>
-       <div class="row mb-3">
-         <label for="inputEmail3" class="col-sm-2 col-form-label">Data</label>
-         <div class="col-sm-10">
-           <input type="datetime-local" class="form-control" id="inputEmail3">
-         </div>
-       </div>
-       <div class="row mb-3">
-         <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
-         <div class="col-sm-10">
-           <input type="email" class="form-control" id="inputEmail3" placeholder="digite seu email"> 
-         </div>
-       </div>
-       <div class="row mb-3">
-         <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
-         <div class="col-sm-10">
-           <input type="password" class="form-control" id="inputPassword3" placeholder="digite sua senha">
-         </div>
-       </div>
-       <div class="row">
-         <div class="col-12">
-          <textarea class="col-12"  rows="10" placeholder="digite sua menssagem"></textarea>
-
-         </div>
-
-       </div>
-      
-       <button type="submit" class="btn btn-primary">enviar</button>
-       
-
-     </div>
-    </form>
-
+     
    </main>
    
-   <footer class="container">
-    <ul class="row">
-    <li class=><a href="">telefone</a></li>
+   <footer>
+    <ul>
+    <li><a href="">telefone</a></li>
     <li><a href="">e-mail</a></li>
     <li><a href="">localização</a></li>
     </ul>
-    <nav class="offset-9">
+    <nav>
       <a href="">facebook</a>
       <a href="">instagram</a>
       <a href="">youtube<a></a>
     </nav>
      
-</footer>
+  </footer>
    
   </body>
+  <script type="text/javascript" src="js/script.js"></script>
 </html>

@@ -23,58 +23,70 @@
   <body>
     <header>
       <a href="home.html" class="page-header">Game Mania</a>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="nav">
-              <ul class="list nav">
-                <li><a href="home.html" class="men">Home<a></a></li>
-                <li><a href="destaque.html" class="men">Destaque</a></li>
-                <li><a href="novidades.html" class="men">novidades</a></li>
-                <li><a href="galeria.html" class="men">galeria</a></li>
-                <li><a href="contato.html" class="men">contato</a></li>
-                <li><a href="login.html" class="men">login</a></li>         
-              </ul>            
-            </nav>
+      <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="promocoes.html">promoções</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn" onclick="menu()">consoles<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="">playstation</a>
+            <a href="">xbox</a>
+            <a href="">pc game</a>
           </div>
         </div>
-      </div>  
-    </header>  
+        <a href="novidades.html" >novidades</a>
+        <a href="galeria.html" >galeria</a>
+        <a href="contato.html" >contato</a>
+        <a href="login.html" >login</a>
+      </div>
+    </header>    
     
     <h1>login</h1>
     <main>
-      <form action="">
-        <div class="container">
-          <div class="row mb-2">
-            <div class="col-6 offset-3">
-              <input type="text" class="form-control" id="inputUser" placeholder="digite seu nome de usuário">
-            </div>
-          </div>
-          <div class="row mb-2">
-            <div class="col-6 offset-3">
-              <input type="password" class="form-control" id="inputPassword" placeholder="digite sua senha">
-            </div>
-          </div>
-          <button type="submit" class="offset-5 mb-2">login</button>
-          
-          <button id="senha" type="submit" class="offset-5 mb-2">esqueceu a senha</button>
-          <button id="novo" type="submit" class="offset-5 mb-5">cadrasto</button>
+      <form class="login" method="#" action="#" onsubmit="return validacao()">
+        <div>
+          <label for="nome" >Nome</label> <br>
+          <input type="name"  placeholder="digite seu nome" maxlength="25" id="nome">  
         </div>
+        <div>
+          <label for="email">E-mail</label> <br>
+          <input type="email"  placeholder="digite seu e-mail" maxlength="15" id="email">    
+        </div>
+        <div>
+          <label for="password">Senha</label> <br>
+          <input type="password"  id="password" maxlength="8" placeholder="digite sua senha">
+        </div>
+        <div>
+          <label for="mensagem">Digite sua mensagem aqui</label> <br>
+          <textarea name="" id="" cols="80" rows="10"  placeholder="digite sua mensagem aqui" maxlength="120"></textarea>
+        </div>
+        <div>
+          <button type="submit">login</button> <br>
+          <button id="senha" type="submit">esqueceu a senha</button> <br>
+          <button id="novo" type="submit">cadrasto</button>
+        </div>
+
+        
+
       </form>
     </main>
 
+    <footer>
+      <ul>
+      <li><a href="">telefone</a></li>
+      <li><a href="">e-mail</a></li>
+      <li><a href="">localização</a></li>
+      </ul>
+      <nav>
+        <a href="">facebook</a>
+        <a href="">instagram</a>
+        <a href="">youtube<a></a>
+      </nav>
+       
+    </footer>
 
-
-
-<footer class="container">
-  <ul class="row">
-    <li class=><a href="">telefone</a></li>
-    <li><a href="">e-mail</a></li>
-    <li><a href="">localização</a></li>
-  </ul>
-    <nav class="offset-9">
-      <a href="">facebook</a>
-      <a href="">instagram</a>
-      <a href="">youtube<a></a>
-    </nav>
-</footer>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+    </html>

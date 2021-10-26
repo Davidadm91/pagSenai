@@ -23,24 +23,25 @@
   <body>
     <header>
       <a href="home.html" class="page-header">Game Mania</a>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12">
-            <nav class="nav">
-              <ul class="list nav">
-                <li><a href="home.html" class="men">Home<a></a></li>
-                <li><a href="destaque.html" class="men">Destaque</a></li>
-                <li><a href="novidades.html" class="men">novidades</a></li>
-                <li><a href="galeria.html" class="men">galeria</a></li>
-                <li><a href="contato.html" class="men">contato</a></li>
-                <li><a href="login.html" class="men">login</a></li>         
-              </ul>            
-            </nav>
+      <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="promocoes.html">promoções</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn" onclick="menu()">consoles<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="">playstation</a>
+            <a href="">xbox</a>
+            <a href="">pc game</a>
           </div>
         </div>
-      </div>  
-    </header>
+        <a href="novidades.html" >novidades</a>
+        <a href="galeria.html" >galeria</a>
+        <a href="contato.html" >contato</a>
+        <a href="login.html" >login</a>
+      </div>
+    </header>    
    
     <main class="container">
       <h1>destaque</h1>
@@ -84,5 +85,5 @@
 </footer>
   </body>
   
- 
+  <script type="text/javascript" src="js/script.js"></script>
 </html>
