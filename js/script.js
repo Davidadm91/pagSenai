@@ -13,7 +13,7 @@ window.onclick = function () {
 function formulario() {
   let n = document.forms['form']['nome'].value
   let e = document.forms['form']['email'].value
-  let p = document.forms['form']['password'].value
+  let p = document.forms['form']['senha'].value
 
   if (n == '') {
     alert('preencha o campo nome')
