@@ -17,66 +17,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site senai</title>
     <link rel="stylesheet" href="" type=""size=16x16>
+    <!-- links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet"type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<!------down img----->
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#painel").slideToggle("show");
+    })
+  })
+  
+  
+</script>
+
   </head>
   <body>
     <header>
       <a href="home.html" class="page-header">Game Mania</a>
       <div class="navbar">
         <a href="home.html">Home</a>
-        <a href="promocoes.html">promoções</a>
-        
         <div class="dropdown">
-          <button  onclick="menu()" class="dropbtn">consoles<i class="fa fa-caret-down"></i>
+          <button class="dropbtn" onclick="menu()">promoções<i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="">playstation</a>
-            <a href="">xbox</a>
-            <a href="">pc game</a>
+            <a href="promocoes.html">playstation</a>
+            <a href="promocoes.html">xbox</a>
+            <a href="promocoes.html">pc game</a>
           </div>
         </div>
         <a href="novidades.html" >novidades</a>
         <a href="galeria.html" >galeria</a>
         <a href="contato.html" >contato</a>
-        <a href="login.html" >login</a>
       </div>
     </header>    
+    <div>
+      <h1>home</h1>
+    </div>
+    <div id="flip">clique aqui para saber mais sobre nós</div>
+    <div id="painel">
+        <p>
+          A nossa <u><strong>MISSÃO</strong></u> é inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos, entreterimento e inovação, causando uma emoção inédita, criando experiências e prazeres.
+          A <u><strong>VISÃO</strong></u> da empresa é ampliar o público-alvo e as nossas açoes no mundo gamer e tecnológico.
+          já os <u><strong>VALORES</strong></u> envolvem, ética, inovação, respeito aos clientes, respeito á lei.</p>
+    </div> 
+
   <main>
-    <h1>home</h1>
-      <div class="banner-home">
-        <section class="text-home">
-          <p>
-            A nossa <u><strong>MISSÃO</strong></u> é inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos, entreterimento e inovação, causando uma emoção inédita, criando experiências e prazeres.
-            A <u><strong>VISÃO</strong></u> da empresa é ampliar o público-alvo e as nossas açoes no mundo gamer e tecnológico.
-            já os <u><strong>VALORES</strong></u> envolvem, ética, inovação, respeito aos clientes, respeito á lei.</p>
-        </section>
-        <picture>
-          <div>
-            <img width="100%" height=""src="img/controles consoles.jpg" alt="alguns controles de consoles, xbox one, playstation 4, nitendo swicth"
-          title="controles de consoles da nova geração"  />
-          <div class="banner-aux-home"><div><img width="100%" height="" src="img/iphone11.jpg" alt="" /></div>
-          <div><img width="100%" height="" src="img/noteboook.jpg" alt=""  ></div>
-          <div> <img width="100%" height="" src="img/nitendo switch.jpg" alt="" /></div></div>
-          </div>
-    
+        <picture >  
+            <img  src="img/iphone11.jpg" alt="" />
+            <img  src="img/noteboook.jpg" alt=""  >
+            <img  src="img/nitendo switch.jpg" alt="" />
+            <img src="img/controles consoles.jpg" alt="alguns controles de consoles, xbox one, playstation 4, nitendo swicth"
+             title="controles de consoles da nova geração"  />                      
         </picture>
   </main>
       
 <footer>
   <div>
     <ul>
-      <li><a href="">telefone</a></li>
-      <li><a href="">e-mail</a></li>
-      <li><a href="">localização</a></li>
+      <li><a href="">telefone</a>
+      <li><a href="">e-mail</a>
+      <li><a href="">localização</a>
     </ul>
-    <nav class="footer-nav">
+    <nav>
       <a href="">facebook</a>
       <a href="">instagram</a>
       <a href="">youtube<a></a>
     </nav>
   </div>
-  
 </footer>
 
   </body>

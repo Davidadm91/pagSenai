@@ -17,52 +17,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site senai</title>
     <link rel="stylesheet" href="" type=""size=16x16>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet"type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header>
       <a href="home.html" class="page-header">Game Mania</a>
       <div class="navbar">
         <a href="home.html">Home</a>
-        <a href="promocoes.html">promoções</a>
-        
         <div class="dropdown">
-          <button class="dropbtn" onclick="menu()">consoles<i class="fa fa-caret-down"></i>
+          <button class="dropbtn" onclick="menu()">promoções<i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="">playstation</a>
-            <a href="">xbox</a>
-            <a href="">pc game</a>
+            <a href="promocoes.html">playstation</a>
+            <a href="promocoes.html">xbox</a>
+            <a href="promocoes.html">pc game</a>
           </div>
         </div>
         <a href="novidades.html" >novidades</a>
         <a href="galeria.html" >galeria</a>
         <a href="contato.html" >contato</a>
-        <a href="login.html" >login</a>
       </div>
-    </header>    
+    </header> 
     
-    <h1>fale conosco</h1>
-   <main>
-    <form>
-     
-   </main>
-   
-   <footer>
-    <ul>
-    <li><a href="">telefone</a></li>
-    <li><a href="">e-mail</a></li>
-    <li><a href="">localização</a></li>
-    </ul>
-    <nav>
-      <a href="">facebook</a>
-      <a href="">instagram</a>
-      <a href="">youtube<a></a>
-    </nav>
-     
-  </footer>
-   
-  </body>
-  <script type="text/javascript" src="js/script.js"></script>
-</html>
+    <h1>Contato</h1>
+    <main>
+      <form name="form" onsubmit=" formulario()">
+        <div>
+          <label for="nome" >Nome</label> <br>
+          <input type="name"  placeholder="digite seu nome" name="nome">  
+        </div>
+        <div>
+          <label for="email">E-mail</label> <br>
+          <input type="email"  placeholder="digite seu e-mail" name="email">    
+        </div>
+        <div>
+          <label for="senha">Senha</label> <br>
+          <input type="password" placeholder="digite sua senha"  name="senha">
+        </div>
+        <div>
+          <label for="mensagem">Digite sua mensagem aqui</label> <br>
+          <textarea name="" id="" cols="80" rows="10"  placeholder="digite sua mensagem aqui" maxlength="120"></textarea>
+        </div>
+        <div>
+          <button type="submit" value="submit">login</button> <br>
+          <button id="senha" type="submit">esqueceu a senha</button> <br>
+          <button id="novo" type="submit">cadrasto</button>
+        </div>
+
+        
+
+      </form>
+    </main>
+
+    <footer>
+      <ul>
+      <li><a href="">telefone</a></li>
+      <li><a href="">e-mail</a></li>
+      <li><a href="">localização</a></li>
+      </ul>
+      <nav>
+        <a href="">facebook</a>
+        <a href="">instagram</a>
+        <a href="">youtube<a></a>
+      </nav>
+       
+    </footer>
+
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+    </html>

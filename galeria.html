@@ -17,48 +17,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site senai</title>
     <link rel="stylesheet" href="" type=""size=16x16>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet"type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- funções Jquery-->
+    <script>
+    
+        
+    </script>
+
+
   </head>
   <body>
-    <header>
+       <header>
       <a href="home.html" class="page-header">Game Mania</a>
       <div class="navbar">
         <a href="home.html">Home</a>
-        <a href="promocoes.html">promoções</a>
-        
         <div class="dropdown">
-          <button class="dropbtn" onclick="menu()">consoles<i class="fa fa-caret-down"></i>
+          <button class="dropbtn" onclick="menu()">promoções<i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="">playstation</a>
-            <a href="">xbox</a>
-            <a href="">pc game</a>
+            <a href="promocoes.html">playstation</a>
+            <a href="promocoes.html">xbox</a>
+            <a href="promocoes.html">pc game</a>
           </div>
         </div>
         <a href="novidades.html" >novidades</a>
         <a href="galeria.html" >galeria</a>
         <a href="contato.html" >contato</a>
-        <a href="login.html" >login</a>
       </div>
-    </header>    
-   
-    
-    <h1>galeria</h1>
-
+    </header> 
+    <div>
+      <h1>galeria</h1>
+    </div>
     <main >
-      <div class="container"><picture class="row" >
-        <div class="col-6"><img src="img/xbox360.jpg" alt="xbox 360 preto" title="xbox 360" class="gal"/></div>
-          <div class="col-6"><img src="img/xbox one.jpg" alt="xbox one branco" title="xbox one" class="gal"/></div>
-          <div class="col-6"><img src="img/play2.jpg" alt="playstation 2" title="playstation 2" class="gal"/></div>
-          <div class="col-6"><img src="img/ps4 cliente.jpg" alt="controle playstation 4 vermelho"title="controle playstation 4 vermelho"class="gal"/></div>
-          <div class="col-6"><img src="img/play5.jpg" alt="playstation 5" title="playstation 5" class="gal"/></div>
-          <div class="col-6"><img src="img/iphone11.jpg" alt="iphone 11 pro black" title="iphone 11" class="gal"/></div>
-          <div class="col-6"><img src="img/nitendo switch.jpg" alt="nitendo switch" title="nitendo switch" class="gal"/></div>
-          <div class="col-6"> <img src="img/pc game.jpg" alt="pc game" title="pc game" class="gal"/></div>
-          
-      </picture></div>
-        
+        <picture >
+          <img src="img/xbox360.jpg" alt="xbox 360 preto" title="xbox 360" />
+         <img src="img/xbox one.jpg" alt="xbox one branco" title="xbox one" />
+          <img src="img/play2.jpg" alt="playstation 2" title="playstation 2" />
+          <img src="img/ps4 cliente.jpg" alt="controle playstation 4 vermelho"title="controle playstation 4 vermelho"/>
+          <img src="img/play5.jpg" alt="playstation 5" title="playstation 5" />
+          <img src="img/iphone11.jpg" alt="iphone 11 pro black" title="iphone 11" />
+          <img src="img/nitendo switch.jpg" alt="nitendo switch" title="nitendo switch" />
+          <img src="img/pc game.jpg" alt="pc game" title="pc game" />
+        </picture>
     </main>
     
     <footer>
@@ -72,9 +75,7 @@
         <a href="">instagram</a>
         <a href="">youtube<a></a>
       </nav>
-       
     </footer>
   </body>
-  
   <script type="text/javascript" src="js/script.js"></script>
 </html>

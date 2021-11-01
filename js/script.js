@@ -1,7 +1,7 @@
 function menu() {
   document.getElementById('myDropdown').classList.toggle('show')
 }
-window.onclick = function () {
+window.onclick = function (e) {
   if (!e.target.matches('.dropbtn')) {
     let myDropdown = document.getElementById('myDropdown')
     if (myDropdown.classList.contains('show')) {
@@ -19,12 +19,12 @@ function formulario() {
     alert('preencha o campo nome')
     return false
   }
-  if (e == '') {
-    alert('preencha o campo e-mail')
+  if (n.length < 3) {
+    alert('nome muito curto')
     return false
   }
-  if (p == '') {
-    alert('preencha o campo senha')
+  if (e == '') {
+    alert('preencha o campo e-mail')
     return false
   }
 }
